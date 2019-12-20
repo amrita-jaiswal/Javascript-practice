@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Json Example 2</title>
+
+    </head>
+    <body>
+        <script>
+          var simpleJsonString = '[{"name":"Minhaj", "location":"bangalore"},{"name":"hari", "location":"east bangalore"},{"name":"geeta", "location":"south bangalore"}]' ;
+            var studentJavascriptArray = JSON.parse(simpleJsonString);
+
+            var arrayLength= studentJavascriptArray.length;
+            for(let i=0;i<arrayLength; i++){
+                for(let index in studentJavascriptArray[i]){
+                    document.write(studentJavascriptArray[i][index] +"<br>");
+                }
+                //this line is to separate different objects.
+                document.write('<br><br>');
+
+            }
+            
+            </script>
+    </body>
+</html>

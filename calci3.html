@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Array calc
+        </title>
+    </head>
+
+    <body>
+        <script>
+
+      num_array=[1,2,3,4,5]      
+
+            
+class calc
+    {
+
+     add(inputArr) 
+        {
+            var total=0;
+                for(var i=0;i<inputArr.length;i++){
+                    total+=inputArr[i];
+                }
+                return total;
+        }
+
+        subtract(inputArr) 
+        {
+                return (inputArr[1]-inputArr[0])
+        }
+
+        multiply(inputArr) 
+        {
+            var total=1;
+                for(var i=0;i<inputArr.length;i++){
+                    total*=inputArr[i];
+                }
+                return total;
+        }
+
+        square(inputArr) 
+        {
+            var total=[]
+                for(var i=0;i<inputArr.length;i++){
+                    total[i]=inputArr[i]*inputArr[i]
+                }
+                return total;
+        }    
+    
+    }
+
+    class calc2 extends calc{
+
+        sin(deg){
+            return Math.sin(deg* Math.PI / 180)
+        }
+        cos(deg){
+            return Math.cos(deg)
+        }
+        tan(deg){
+            return Math.tan(deg)
+        }
+        pow(input,powVal){
+            return Math.pow(3,4)
+        }
+
+    }
+
+
+
+    
+    let sci_Calculator=new calc2()
+
+    
+    window.alert(sci_Calculator.add(num_array))
+    window.alert(sci_Calculator.subtract(num_array))
+    window.alert(sci_Calculator.multiply(num_array))
+    window.alert(sci_Calculator.square(num_array))
+
+
+    window.alert(sci_Calculator.sin(0))
+    window.alert(sci_Calculator.cos(0))
+    window.alert(sci_Calculator.tan(0))
+    window.alert(sci_Calculator.pow(3,4))
+
+
+        </script>
+    </body>
+
+</html>

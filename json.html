@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Json Example</title>
+
+    </head>
+    <body>
+        <script>
+            var simpleJsonString = '["Minhaj", "Yunus", "geeta", "hari"]'
+            var studentJavascriptArray = JSON.parse(simpleJsonString);
+            var arrayLength= studentJavascriptArray.length;
+            for(let i=0;i<arrayLength; i++){
+                document.write(studentJavascriptArray[i] +"<br>");
+
+            }
+            </script>
+    </body>
+</html>

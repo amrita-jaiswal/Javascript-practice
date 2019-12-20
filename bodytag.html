@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>body Tag</title>
+</head>
+     <style> 
+           body{
+                 border: 2px solid blue;
+                 padding:10px;
+                 margin:10px;
+                 }
+             </style>
+<body>
+    <button id="btn">Click</button>
+    <body id ="body-tag">
+    <script>
+         var ref = document.getElementById("body-tag");
+         ref.addEventListener('btn',sayMsg);
+
+         function sayMsg(){
+             console.log(e);
+             if(e.screenX>200){
+                 alert("you clicked a button");
+             }
+         }
+    </script>
+</body>
+</html>

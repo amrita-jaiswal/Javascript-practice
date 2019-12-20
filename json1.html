@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Json Example 1</title>
+
+    </head>
+    <body>
+        <script>
+            var simpleJsonString = '{"name":"Minhaj", "location":"bangalore"}' ;
+            var studentJavascriptOb = JSON.parse(simpleJsonString);
+        
+            for(let i in studentJavascriptOb){
+                document.write(studentJavascriptOb[i] +"<br>");
+
+            }
+            </script>
+    </body>
+</html>

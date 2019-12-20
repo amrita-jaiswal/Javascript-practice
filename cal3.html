@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example3 </title>
+    </head>
+    <body>
+        <script>
+            var calculator = {};
+            
+            calculator.res = function ()
+            {
+                
+                function add(inputArr)
+                    {
+                        var i = 0;
+                        var sum = 0;
+                        for(i=0;i<inputArr.length;i++)
+                            sum = sum + inputArr[i];
+                            return sum;
+                        
+                    }
+                    var addVal = add([8,4,6,3]);
+                    alert("Add=" +addVal);
+                function sub(inputArr)
+                    {
+                        var i = 0;
+                        var sub = 0;
+                        for(i=0;i<inputArr.length;i++)
+                            sub = inputArr[1] - inputArr[0];
+                            return sub;
+                    }
+                    var subVal = sub([5,6]);
+                    alert("Sub=" +subVal);  
+                function multiply(inputArr)
+                    {
+                        var i = 0;
+                        var result = 1;
+                        for(i=0;i<inputArr.length;i++)
+                            result = result * inputArr[i];
+                            return result;
+                    }
+                    var multiVal = multiply([7,3,4]);
+                    alert("Multiply=" +multiVal);
+                function square(inputArr)
+                    {
+                        var i = 0;
+                        var result = [];
+                        for(i=0;i<inputArr.length;i++)
+                            result[i] = inputArr[i] * inputArr[i];
+                            return result;
+                    }    
+                    var squareVal = square([7,6,2]);
+                    alert("Square=" +squareVal);
+            }
+            calculator.res();
+            var sciCalculator = Object.create(calculator);
+            sciCalculator.scientific = function()
+                {
+                    function sin(deg)
+                    {
+                        var result;
+                        result = Math.sin(deg);
+                        return result;
+                    }
+                    var sinVal = sin(45);
+                    alert("Sine=" +sinVal);
+                    function cos(deg)
+                    {
+                        var result;
+                        result = Math.cos(deg);
+                        return result;
+                    }
+                    var cosVal = cos(45);
+                    alert("Cos=" +cosVal);
+                    function tan(deg)
+                    {
+                        var result;
+                        result = Math.tan(deg);
+                        return result;
+                    }
+                    var tanVal = tan(45);
+                    alert("Tan=" +tanVal);
+                    function pow(input,powVal)
+                    {
+                        var result;
+                        result = Math.pow(input,powVal);
+                        return result;
+                    }
+                    var powerVal = pow(4,3);
+                    alert("Power=" +powerVal);
+                }
+                sciCalculator.scientific();
+        </script>
+    </body>
+</html>
