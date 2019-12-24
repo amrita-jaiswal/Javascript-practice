@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+
+         var names = ['John', 'Ankita','married','Hello'];//same data type
+         console.log(names[1]);//shows the name at 1 position
+         console.log(names.length);//shows total length
+
+         names[1] ='Ben';//add to 1 place
+         names[names.length] = 'Martin';//add to last
+         console.log(names);
+
+         var details =['john', 'anisha', 1699, false, 'single'];
+
+         details.push('Green');//add to last
+         details.unshift('Mrs Jones');//add to start
+         console.log(details);
+
+         details.pop();//remove from last
+         details.shift();//remove from first
+         console.log(details);
+
+         console.log(details.indexOf(566));//returns -1 because there is no 566 available in array
+         
+         var isdesigner =details.indexOf('single') === -1 ?
+         'Anisha is married' : 'Anisha is single';
+         console.log(isdesigner);
+
+    </script>
+</body>
+</html>
